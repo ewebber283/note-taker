@@ -18,7 +18,7 @@ router.post('/notes', (req, res) => {
         res.status(400)
     } else {
         const note = createNewNote(req.body, notes);
-        res.json(note)
+        res.json(notes)
     }
 })
 module.exports = router;
